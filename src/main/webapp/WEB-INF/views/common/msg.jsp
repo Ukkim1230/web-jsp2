@@ -4,11 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>유저등록</title>
+<title>Insert title here</title>
 </head>
 <body>
-<form method="POST" action="/user/insert.jsp">
-
-</form>
+<script>
+	alert('${msg}');
+	location.href='${url}';
+</script>
 </body>
 </html>
