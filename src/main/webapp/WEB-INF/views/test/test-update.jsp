@@ -11,7 +11,6 @@
 	if (request.getAttribute("test") == null) {
 	%>
 	이미 삭제된 테스트입니다.
-	<br>
 	<a href="/test/test-list">돌아가기</a>
 	<%
 	} else {
@@ -24,7 +23,7 @@
 				<td><input type="text" name="tiName" value="${test.tiName}"></td>
 			</tr>
 			<tr>
-				<th colspan="1">
+				<th colspan="2">
 					<button>수정</button>
 				</th>
 			</tr>

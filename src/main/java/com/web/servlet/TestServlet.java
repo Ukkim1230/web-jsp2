@@ -59,7 +59,7 @@ public class TestServlet extends HttpServlet {
 			request.setAttribute("msg", msg);
 			request.setAttribute("url", url);
 			RequestDispatcher rd = request.getRequestDispatcher("/views/common/msg");
-			rd.forward(request,response);
+			rd.forward(request, response);
 		}else if ("delete".equals(cmd)) {
 			int result = testService.deleteTest(test.getTiNum());
 			String msg = "실패하였습니다.";

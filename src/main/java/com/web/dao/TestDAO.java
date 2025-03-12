@@ -36,8 +36,8 @@ public class TestDAO {
 			ResultSet rs = ps.executeQuery();
 			if (rs.next()) {
 				TestDTO t = new TestDTO();
-				t.setTiNum(rs.getInt("tiNum"));
-				t.setTiName(rs.getString("tiName"));
+				t.setTiNum(rs.getInt("TI_NUM"));
+				t.setTiName(rs.getString("TI_NAME"));
 				return t;
 			}
 		} catch (SQLException e) {

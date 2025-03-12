@@ -14,7 +14,8 @@ public class FoodDAO {
 	public List<FoodDTO> selectFoods(FoodDTO food) {
 		List<FoodDTO> foods = new ArrayList<>();
 		String sql = "select FI_NUM, FI_NAME, FI_PRICE from FOOD_INFO";
-		try (Connection con = DBCon.getCon(); PreparedStatement ps = con.prepareStatement(sql)) {
+		try (Connection con = DBCon.getCon();
+				PreparedStatement ps = con.prepareStatement(sql)) {
 			ResultSet rs = ps.executeQuery();
 			while (rs.next()) {
 				FoodDTO f = new FoodDTO();
@@ -62,7 +63,7 @@ public class FoodDAO {
 
 	public int updateFood(FoodDTO food) {
 		String sql = "update FOOD_INFO " + "set FI_NAME=?, " + "FI_PRICE=? " + "where FI_NUM=?";
-		try (Connection con = DBCon.getCon(); PreparedStatement ps = con.prepareStatement(sql)) {
+		try (Connection con = DBCon.getCon();PreparedStatement ps = con.prepareStatement(sql)) {
 			ps.setString(1, food.getFiName());
 			ps.setInt(2, food.getFiPrice());
 			ps.setInt(3, food.getFiNum());

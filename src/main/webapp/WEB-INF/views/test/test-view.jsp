@@ -25,7 +25,7 @@
 				<td>${test.tiName}</td>
 			</tr>
 			<tr>
-				<th colspan="1">
+				<th colspan="2">
 				<a href="/test/test-update?tiNum=${test.tiNum}"><button type="button">수정</button></a>
 					<button>삭제</button>
 				</th>

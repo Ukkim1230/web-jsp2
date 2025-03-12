@@ -14,7 +14,7 @@
 				<td><input type="text" name="tiName"></td>
 			</tr>
 			<tr>
-				<th colspan="1">
+				<th colspan="2">
 					<button>등록</button>
 				</th>
 			</tr>
